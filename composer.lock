@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4c4ad6ae37d9d0adf9eadbbb5a98c7aa",
+    "hash": "970d43884e938f3543632d4904aec086",
     "packages": [
         {
             "name": "bjyoungblood/bjy-authorize",
@@ -75,6 +75,104 @@
                 "zfc-user"
             ],
             "time": "2013-07-05 11:59:46"
+        },
+        {
+            "name": "facebook/php-sdk",
+            "version": "v3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/facebook-php-sdk.git",
+                "reference": "6714042fa2f5979d4c64c7d11fb4bcab16bdf6cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk/zipball/6714042fa2f5979d4c64c7d11fb4bcab16bdf6cb",
+                "reference": "6714042fa2f5979d4c64c7d11fb4bcab16bdf6cb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/facebook-php-sdk/contributors"
+                }
+            ],
+            "description": "Facebook PHP SDK",
+            "homepage": "https://github.com/facebook/facebook-php-sdk",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "time": "2013-11-19 23:11:14"
+        },
+        {
+            "name": "middleout/third-party-connect",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/middleout/third-party-connect.git",
+                "reference": "c2d3cf787292ba61731842eb3563fef192be93a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/middleout/third-party-connect/zipball/c2d3cf787292ba61731842eb3563fef192be93a5",
+                "reference": "c2d3cf787292ba61731842eb3563fef192be93a5",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/php-sdk": "3.*",
+                "php": ">=5.3.3",
+                "zendframework/zendframework": "2.*"
+            },
+            "type": "zf-module",
+            "autoload": {
+                "psr-0": {
+                    "ThirdPartyConnect": "src/"
+                },
+                "classmap": [
+                    "./Module.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andrei Gabreanu",
+                    "email": "andrei.gabreanu@middleout.com",
+                    "homepage": "http://middleout.com"
+                }
+            ],
+            "description": "Module for ZF2 which allows the developer to implement Facebook. Twitter, Google and Linked in connect using their own database storage for the user.",
+            "homepage": "https://github.com/middleout/third-party-connect",
+            "keywords": [
+                "connect",
+                "facebook",
+                "google",
+                "linkedin",
+                "module",
+                "twitter",
+                "zf2"
+            ],
+            "time": "2014-03-25 10:47:57"
         },
         {
             "name": "zendframework/zendframework",
@@ -247,9 +345,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "middleout/third-party-connect": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },
