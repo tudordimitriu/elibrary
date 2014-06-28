@@ -11,6 +11,8 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.3.*",
         "bjyoungblood/bjy-authorize": "1.4.*",
-        "middleout/third-party-connect": "dev-master"
+        "middleout/third-party-connect": "dev-master",
+        "zf-commons/zfc-user": "0.1.*",
+        "zendframework/zftool": "dev-master"
     }
 }
